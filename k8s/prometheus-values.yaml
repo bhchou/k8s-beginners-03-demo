@@ -1,0 +1,30 @@
+alertmanager:
+  enabled: false
+
+prometheus-pushgateway:
+  enabled: false
+
+prometheus-node-exporter:
+  enabled: false
+
+kube-state-metrics:
+  enabled: true
+
+server:
+  replicaCount: 1
+
+  persistentVolume:
+    enabled: true
+    storageClass: oci-bv
+    size: 50Gi
+
+  retention: "7d"
+  retentionSize: "2GB"
+
+  resources:
+    requests:
+      cpu: 50m
+      memory: 256Mi
+    limits:
+      cpu: 300m
+      memory: 768Mi

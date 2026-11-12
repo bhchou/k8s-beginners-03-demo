@@ -1,0 +1,25 @@
+datasources:
+  datasources.yaml:
+    apiVersion: 1
+    datasources:
+    - access: proxy
+      editable: false
+      isDefault: true
+      name: Prometheus
+      type: prometheus
+      uid: prometheus
+      url: http://prometheus-server.monitoring.svc.cluster.local
+ingress:
+  enabled: false
+persistence:
+  enabled: false
+replicas: 1
+resources:
+  limits:
+    cpu: 200m
+    memory: 256Mi
+  requests:
+    cpu: 25m
+    memory: 64Mi
+service:
+  type: ClusterIP

@@ -1,0 +1,23 @@
+# Python
+.venv*/
+__pycache__/
+*.pyc
+
+# macOS
+.DS_Store
+
+# IDE
+.vscode/
+.idea/
+
+# Environment / secrets
+.env
+.env.*
+*.key
+*.pem
+
+# Kubernetes local config
+kubeconfig
+kubeconfig.*
+
+data
