@@ -58,5 +58,7 @@ Kubernetes Beginners 03 — Operations, Security & Monitoring
 
 ## License
 
-授權�This project is licensed under the MIT License.
-See [LICENSE](LICENSE) for details.
+本專案中的程式碼、Dockerfile 與 Kubernetes YAML 採用
+[MIT License](LICENSE) 授權。
+
+課程投影片、HackMD 與其他教學內容不包含在本 Repository 的 MIT License 授權範圍內。
